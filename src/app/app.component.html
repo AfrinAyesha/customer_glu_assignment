@@ -1,0 +1,42 @@
+<div class="app-comp">
+  <button (click)="open()">Open Bottom Sheet</button>
+  <app-bottom-sheeet [open]="isOpen" (close)="closing($event)"> 
+    <div class="box-container">
+      <div class="title">Google</div>
+      <div class="content">Add a note</div>
+    </div>
+    <div class="box-container">
+      <div class="title">Yahoo</div>
+      <div class="content">Add a note</div>
+    </div>
+    <div class="box-container">
+      <div class="title">MSN</div>
+      <div class="content">Add a note</div>
+    </div>
+    <div class="box-container">
+      <div class="title">MSN</div>
+      <div class="content">Add a note</div>
+    </div>
+  </app-bottom-sheeet>
+
+
+ <br>
+
+  <div class="timer-assignment">
+    
+    
+    <app-timer [timeLimit]="timerValue" [status]="status"></app-timer>
+    <form [formGroup]="timerForm">
+      
+      <input type="please input the timer" type="number" min="1"
+      formControlName="val">
+    </form>
+    <button (click)="start()">START</button>
+    <button *ngIf="status === 'PLAY'" (click)="pauseResume()">PAUSE</button>
+    <button *ngIf="status === 'PAUSE'" (click)="pauseResume()">RESUME</button>
+    <button (click)="reset()">RESET</button>
+  </div>
+</div>
+
+
+

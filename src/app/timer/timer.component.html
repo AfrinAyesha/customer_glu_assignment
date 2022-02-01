@@ -1,0 +1,8 @@
+<div class="timer-container">
+    <div class="blue-bg"></div>
+    <div class="status">{{status}}</div>
+    <div class="timer-zone">
+        <div>{{timeLimit || 0}}</div>
+    </div>
+    <div class="progress-bar" [attr.value]="timeLimit"></div>
+</div>

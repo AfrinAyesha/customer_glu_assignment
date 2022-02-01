@@ -1,0 +1,10 @@
+
+<div class="bottom-sheet" [ngClass]="open? 'opened': ''">
+
+
+    <div class="backdrop"  (click)="offClickHandler()"></div>
+    <div class="bottom-sheet-container">
+      <ng-content></ng-content>
+    </div>
+    </div>
+    

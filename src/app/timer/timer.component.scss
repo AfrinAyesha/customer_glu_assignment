@@ -1,0 +1,28 @@
+.timer-container {
+    padding:20px;
+    border:2px solid black;
+    width: 50%;
+    margin: auto;
+    .blue-bg{
+        width: 100%;
+        height: 4px;
+        background-color: blue;
+    }
+    .timer-zone {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 3px solid blue;
+        font-size: 52px;
+        
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .progress-bar{
+        background-color: blue; 
+        height: 4px;
+        width: 100%;
+    }
+}
